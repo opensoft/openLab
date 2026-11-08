@@ -167,3 +167,10 @@ Everything under `scripts/`, plus `contracts/repository-naming.yaml` and
 `contracts/shape-pin.yaml`. Edit them upstream, not here — a local edit is
 reported as drift. `AGENTS.md` and `CLAUDE.md` have no row and are this
 project's own.
+
+
+## Initial laboratory contracts
+
+[Foundation overview](spec/ideation/brainstorm/openlab-foundation-overview.md) describes draft command, acquisition-import and artifact boundaries. [Schemas](spec/contracts/v0.1/) live in the spec leg. [Executable synthetic examples](code/README.md) live in the code leg.
+
+The first examples cover Zeus rotation/slot positioning and HPLC/MS raw-file import. They validate payloads and synthetic file integrity; they do not operate equipment or perform scientific analysis.
