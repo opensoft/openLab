@@ -54,6 +54,29 @@ park rather than resetting over somebody else's commit. Nothing under
 All three carry the GitHub topic `xf-project-openlab`, so the organisation's own search
 surfaces the group without a checkout.
 
+## Naming openLab components
+
+Use `openlab-<system>-<type>[-<variant>]` for new public openLab component
+names and for standalone repositories that publish those components. Use
+lowercase kebab-case for these names and **openLab** as the display name.
+The system identifies an instrument family or subsystem, the type describes
+what the component does, and the optional variant narrows its role.
+
+| Example name | Component |
+| --- | --- |
+| `openlab-zeus-device-driver` | A Zeus device driver |
+| `openlab-hplcms-importer` | An HPLC/MS file importer |
+| `openlab-hplcms-analyzer` | An HPLC/MS analysis component |
+
+These names illustrate the convention. See [Initial laboratory contracts](#initial-laboratory-contracts)
+for the examples available in this project today.
+
+The existing triad uses `openLab` for the assembly, `openLab-spec` for the
+specification leg, and `openLab-code` for the implementation leg. The
+`-spec` and `-code` suffixes identify repository legs. Projects adopting a
+triad follow the [repository naming policy](contracts/repository-naming.yaml)
+for their assembly and leg names.
+
 ## Reading private legs in CI: a GitHub App first, `SHAPE_LEGS_TOKEN` as fallback
 
 If `Opensoft/openLab-spec` or `Opensoft/openLab-code` is **private or internal**,
